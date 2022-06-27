@@ -1,0 +1,41 @@
+
+
+WARNING: RAxML is not checking sequences for duplicate seqs and sites with missing data!
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+RAxML consensus tree computation
+
+
+RAxML was called as follows:
+
+/usr/bin/raxmlHPC-PTHREADS-AVX -T 6 -L MR -z RAxML_bootstrap.ag_out-DP2-68451 -m GTRCAT -n T2 
+
+
+
+
+Found 100 trees in File RAxML_bootstrap.ag_out-DP2-68451
+
+Tree certainty for this tree: 27.999919
+Relative tree certainty for this tree: 0.622220
+
+Tree certainty including all conflicting bipartitions (TCA) for this tree: 27.971348
+Relative tree certainty including all conflicting bipartitions (TCA) for this tree: 0.621586
+
+RAxML Majority Rule consensus tree with IC values written to file: /media/wanglab/a1db4836-3cc0-4109-a3b8-63746efb9dfb/jfm/stupid_hummingbirds/treemix/raxml/RAxML_MajorityRuleConsensusTree_IC.T2
+
