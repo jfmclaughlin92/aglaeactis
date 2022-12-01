@@ -1,0 +1,381 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    kowakian (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy -st DNA -m TEST -bb 1000000 -nt 5 -o en32573
+Seed:    341854 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May 18 08:07:58 2022
+Kernel:  AVX+FMA - 5 threads (24 CPU cores detected)
+
+Reading alignment file angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 46 sequences with 2476 columns, 2458 distinct patterns
+0 parsimony-informative, 0 singleton sites, 2476 constant sites
+           Gap/Ambiguity  Composition  p-value
+   1  al43043     33.56%    passed     96.07%
+   2  cca159783   26.21%    passed     88.01%
+   3  cca159798   22.05%    passed     91.27%
+   4  cca168255   33.97%    passed     89.83%
+   5  cca169263   21.37%    passed     93.86%
+   6  cca169268   28.11%    passed     82.65%
+   7  cca169321   25.89%    passed     85.97%
+   8  cca169373   28.35%    passed     46.30%
+   9  cca169390   42.16%    passed     73.60%
+  10  cca169414   36.03%    passed     61.09%
+  11  cca27149    25.16%    passed     62.31%
+  12  regB3604    29.40%    passed     90.66%
+  13  regB3605    30.21%    passed     92.86%
+  14  regB3610    32.19%    passed     77.49%
+  15  regB3611    34.57%    passed     87.86%
+  16  cauB3614    26.62%    passed     94.62%
+  17  ccaB3620    27.67%    passed     58.25%
+  18  ccaB8215    20.19%    passed     99.24%
+  19  ccaB8406    44.47%    passed     98.91%
+  20  cau171672   46.37%    failed      2.94%
+  21  cau171697   39.26%    passed     66.66%
+  22  ccu171922   24.15%    passed     55.29%
+  23  ccu171938   51.13%    passed     72.26%
+  24  ccu172050   22.78%    passed     91.42%
+  25  cau172647   21.08%    passed     96.10%
+  26  cau172648   34.53%    passed     87.87%
+  27  cau27152    34.13%    passed     87.28%
+  28  cau31150    21.08%    passed     87.07%
+  29  cau31703    19.75%    passed     88.20%
+  30  cau34846    32.31%    passed     88.71%
+  31  cau34955    20.92%    passed     95.30%
+  32  cau34969    22.01%    passed     89.55%
+  33  ccu35130    23.51%    passed     81.52%
+  34  cau43139    23.34%    passed     94.78%
+  35  ccuB32203   27.83%    passed     93.85%
+  36  ccuB32266   34.81%    passed     97.13%
+  37  ccuB32524   30.17%    passed     63.59%
+  38  ccuB32578   27.87%    passed     99.61%
+  39  ccuB32662   30.17%    passed     80.33%
+  40  cauB3956    33.08%    passed     78.94%
+  41  ccuB6274    23.18%    passed     90.03%
+  42  ccuB6275    25.77%    passed     78.87%
+  43  ccuB6280    25.28%    passed     94.73%
+  44  en32573     30.37%    passed     94.21%
+  45  paB106743   43.98%    failed      0.29%
+  46  paB22569    33.24%    passed     68.35%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL       29.79%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.007 seconds
+Perform fast likelihood tree search using GTR model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3309.262
+Optimal log-likelihood: -3309.262
+Rate parameters:  A-C: 0.99994  A-G: 1.00024  A-T: 0.99985  C-G: 0.99987  C-T: 1.00024  G-T: 1.00000
+Base frequencies:  A: 0.317  C: 0.179  G: 0.165  T: 0.339
+Parameters optimization took 1 rounds (0.016 sec)
+Time for fast ML tree search: 0.079 seconds
+
+NOTE: ModelFinder requires 9414 MB RAM!
+ModelFinder will test up to 22 DNA models (sample size: 2476) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         3309.262     97  6812.523     6820.518     7376.520
+  2  SYM           3432.649     94  7053.297     7060.798     7599.851
+  3  TVM+F         3309.262     96  6810.523     6818.352     7368.706
+  4  TVMe          3432.649     93  7051.297     7058.637     7592.036
+  5  TIM3+F        3309.262     95  6808.523     6816.187     7360.891
+  6  TIM3e         3432.649     92  7049.297     7056.478     7584.222
+  7  TIM2+F        3309.262     95  6808.523     6816.187     7360.891
+  8  TIM2e         3432.649     92  7049.297     7056.478     7584.222
+  9  TIM+F         3309.262     95  6808.523     6816.187     7360.891
+ 10  TIMe          3432.649     92  7049.298     7056.479     7584.222
+ 11  TPM3u+F       3309.262     94  6806.523     6814.024     7353.077
+ 12  TPM3+F        3309.262     94  6806.523     6814.024     7353.077
+ 13  TPM2u+F       3309.262     94  6806.523     6814.024     7353.077
+ 14  TPM2+F        3309.262     94  6806.523     6814.024     7353.077
+ 15  K3Pu+F        3309.262     94  6806.523     6814.024     7353.077
+ 16  K3P           3432.649     91  7047.298     7054.321     7576.408
+ 17  TN+F          3309.262     94  6806.523     6814.024     7353.077
+ 18  TNe           3432.649     91  7047.298     7054.321     7576.408
+ 19  HKY+F         3309.262     93  6804.523     6811.863     7345.263
+ 20  K2P           3432.649     90  7045.298     7052.166     7568.594
+ 21  F81+F         3309.262     92  6802.523     6809.704     7337.448
+ 22  JC            3432.649     89  7043.298     7050.012     7560.779
+Akaike Information Criterion:           F81+F
+Corrected Akaike Information Criterion: F81+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy.model.gz
+CPU time for ModelFinder: 2.224 seconds (0h:0m:2s)
+Wall-clock time for ModelFinder: 0.488 seconds (0h:0m:0s)
+Generating 1000000 samples for ultrafast bootstrap (seed: 341854)...
+
+NOTE: 9403 MB RAM (9 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3309.262
+Optimal log-likelihood: -3309.262
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.317  C: 0.179  G: 0.165  T: 0.339
+Parameters optimization took 1 rounds (0.011 sec)
+Computing ML distances based on estimated model parameters... 0.108 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -3309.119
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.432 second
+Computing log-likelihood of 98 initial trees ... 0.443 seconds
+Current best score: -3309.119
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3309.119
+Iteration 10 / LogL: -3309.262 / Time: 0h:7m:36s
+Iteration 20 / LogL: -3309.262 / Time: 0h:15m:14s
+Finish initializing candidate tree set (20)
+Current best tree score: -3309.119 / CPU time: 859.508
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 24: -3309.119
+Iteration 30 / LogL: -3309.262 / Time: 0h:21m:22s (1h:9m:15s left)
+BETTER TREE FOUND at iteration 31: -3309.119
+Iteration 40 / LogL: -3309.119 / Time: 0h:26m:36s (1h:2m:5s left)
+Iteration 50 / LogL: -3309.119 / Time: 0h:33m:35s (0h:55m:31s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 60 / LogL: -3309.119 / Time: 0h:53m:5s (1h:3m:53s left)
+Iteration 70 / LogL: -3309.119 / Time: 1h:2m:41s (0h:55m:25s left)
+Iteration 80 / LogL: -3309.119 / Time: 1h:12m:19s (0h:46m:41s left)
+Iteration 90 / LogL: -3309.119 / Time: 1h:21m:56s (0h:37m:44s left)
+Iteration 100 / LogL: -3309.119 / Time: 1h:31m:33s (0h:28m:40s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.023
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -3309.119 / Time: 1h:44m:14s (1h:26m:4s left)
+Iteration 120 / LogL: -3309.119 / Time: 1h:54m:36s (1h:17m:2s left)
+Iteration 130 / LogL: -3309.119 / Time: 2h:4m:51s (1h:7m:45s left)
+Iteration 140 / LogL: -3309.119 / Time: 2h:14m:44s (0h:58m:9s left)
+Iteration 150 / LogL: -3309.119 / Time: 2h:25m:18s (0h:48m:45s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 160 / LogL: -3309.119 / Time: 2h:37m:12s (0h:39m:32s left)
+Iteration 170 / LogL: -3309.119 / Time: 2h:47m:51s (0h:29m:47s left)
+Iteration 180 / LogL: -3309.119 / Time: 2h:57m:37s (0h:19m:50s left)
+Iteration 190 / LogL: -3309.119 / Time: 3h:8m:30s (0h:9m:58s left)
+Iteration 200 / LogL: -3309.119 / Time: 3h:19m:3s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.006
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -3309.119 / Time: 3h:32m:14s (1h:31m:23s left)
+Iteration 220 / LogL: -3309.119 / Time: 3h:43m:10s (1h:21m:31s left)
+Iteration 230 / LogL: -3309.119 / Time: 3h:54m:13s (1h:11m:35s left)
+Iteration 240 / LogL: -3309.119 / Time: 4h:3m:58s (1h:1m:14s left)
+Iteration 250 / LogL: -3309.119 / Time: 4h:13m:45s (0h:50m:57s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 260 / LogL: -3309.119 / Time: 4h:25m:8s (0h:40m:56s left)
+Iteration 270 / LogL: -3309.119 / Time: 4h:35m:10s (0h:30m:41s left)
+Iteration 280 / LogL: -3309.119 / Time: 4h:45m:14s (0h:20m:26s left)
+Iteration 290 / LogL: -3309.119 / Time: 4h:55m:43s (0h:10m:13s left)
+Iteration 300 / LogL: -3309.119 / Time: 5h:6m:11s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.004
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -3309.119 / Time: 5h:19m:7s (1h:32m:56s left)
+Iteration 320 / LogL: -3309.119 / Time: 5h:29m:33s (1h:22m:38s left)
+Iteration 330 / LogL: -3309.119 / Time: 5h:40m:2s (1h:12m:21s left)
+Iteration 340 / LogL: -3309.119 / Time: 5h:49m:59s (1h:1m:56s left)
+Iteration 350 / LogL: -3309.119 / Time: 6h:0m:23s (0h:51m:37s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 360 / LogL: -3309.119 / Time: 6h:12m:27s (0h:41m:30s left)
+BETTER TREE FOUND at iteration 370: -3309.119
+Iteration 370 / LogL: -3309.119 / Time: 6h:21m:16s (1h:43m:19s left)
+Iteration 380 / LogL: -3309.119 / Time: 6h:29m:2s (1h:32m:23s left)
+Iteration 390 / LogL: -3309.119 / Time: 6h:36m:15s (1h:21m:29s left)
+Iteration 400 / LogL: -3309.119 / Time: 6h:44m:17s (1h:10m:55s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.008
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+NOTE: 3.102 seconds to dump checkpoint file, increase to 63.000
+NOTE: 3.184 seconds to dump checkpoint file, increase to 64.000
+Iteration 410 / LogL: -3309.119 / Time: 6h:55m:46s (1h:31m:29s left)
+Iteration 420 / LogL: -3309.119 / Time: 7h:4m:52s (1h:21m:7s left)
+Iteration 430 / LogL: -3309.119 / Time: 7h:12m:21s (1h:10m:32s left)
+Iteration 440 / LogL: -3309.119 / Time: 7h:19m:31s (1h:0m:4s left)
+Iteration 450 / LogL: -3309.119 / Time: 7h:26m:50s (0h:49m:45s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 460 / LogL: -3309.119 / Time: 7h:38m:32s (0h:39m:57s left)
+Iteration 470 / LogL: -3309.119 / Time: 7h:45m:12s (0h:29m:45s left)
+Iteration 480 / LogL: -3309.119 / Time: 7h:51m:59s (0h:19m:42s left)
+Iteration 490 / LogL: -3309.119 / Time: 7h:59m:38s (0h:9m:48s left)
+Iteration 500 / LogL: -3309.119 / Time: 8h:6m:3s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.002
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -3309.119 / Time: 8h:17m:6s (1h:27m:53s left)
+Iteration 520 / LogL: -3309.119 / Time: 8h:24m:57s (1h:17m:50s left)
+Iteration 530 / LogL: -3309.119 / Time: 8h:30m:37s (1h:7m:34s left)
+Iteration 540 / LogL: -3309.119 / Time: 8h:37m:50s (0h:57m:38s left)
+NOTE: 3.561 seconds to dump checkpoint file, increase to 72.000
+Iteration 550 / LogL: -3309.119 / Time: 8h:46m:14s (0h:47m:55s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 560 / LogL: -3309.119 / Time: 8h:56m:45s (0h:38m:24s left)
+Iteration 570 / LogL: -3309.119 / Time: 9h:3m:29s (0h:28m:39s left)
+Iteration 580 / LogL: -3309.119 / Time: 9h:9m:39s (0h:18m:59s left)
+Iteration 590 / LogL: -3309.119 / Time: 9h:18m:5s (0h:9m:28s left)
+Iteration 600 / LogL: -3309.119 / Time: 9h:26m:16s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.032
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -3309.119 / Time: 9h:38m:21s (1h:25m:28s left)
+Iteration 620 / LogL: -3309.119 / Time: 9h:45m:30s (1h:15m:40s left)
+Iteration 630 / LogL: -3309.119 / Time: 9h:51m:52s (1h:5m:52s left)
+Iteration 640 / LogL: -3309.119 / Time: 9h:58m:39s (0h:56m:12s left)
+Iteration 650 / LogL: -3309.119 / Time: 10h:6m:24s (0h:46m:43s left)
+Log-likelihood cutoff on original alignment: -3309.266
+Iteration 660 / LogL: -3309.119 / Time: 10h:16m:38s (0h:37m:25s left)
+Iteration 670 / LogL: -3309.119 / Time: 10h:22m:38s (0h:27m:55s left)
+Iteration 680 / LogL: -3309.119 / Time: 10h:28m:33s (0h:18m:30s left)
+Iteration 690 / LogL: -3309.119 / Time: 10h:34m:24s (0h:9m:12s left)
+BETTER TREE FOUND at iteration 698: -3309.119
+Iteration 700 / LogL: -3309.119 / Time: 10h:40m:28s (1h:29m:47s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.165
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 710 / LogL: -3309.119 / Time: 10h:50m:31s (1h:22m:34s left)
+Iteration 720 / LogL: -3309.119 / Time: 10h:57m:1s (1h:13m:6s left)
+Iteration 730 / LogL: -3309.119 / Time: 11h:3m:28s (1h:3m:42s left)
+NOTE: 4.383 seconds to dump checkpoint file, increase to 88.000
+Iteration 740 / LogL: -3309.119 / Time: 11h:9m:46s (0h:54m:22s left)
+Iteration 750 / LogL: -3309.119 / Time: 11h:16m:5s (0h:45m:7s left)
+Log-likelihood cutoff on original alignment: -3309.266
+
+******************************************************
+CHECKPOINT: Resuming analysis from angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy.ckp.gz
+
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    kowakian (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy -st DNA -m TEST -bb 1000000 -nt 5 -o en32573
+Seed:    836376 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu May 19 09:56:36 2022
+Kernel:  AVX+FMA - 5 threads (24 CPU cores detected)
+
+Reading alignment file angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 46 sequences with 2476 columns, 2458 distinct patterns
+0 parsimony-informative, 0 singleton sites, 2476 constant sites
+           Gap/Ambiguity  Composition  p-value
+   1  al43043     33.56%    passed     96.07%
+   2  cca159783   26.21%    passed     88.01%
+   3  cca159798   22.05%    passed     91.27%
+   4  cca168255   33.97%    passed     89.83%
+   5  cca169263   21.37%    passed     93.86%
+   6  cca169268   28.11%    passed     82.65%
+   7  cca169321   25.89%    passed     85.97%
+   8  cca169373   28.35%    passed     46.30%
+   9  cca169390   42.16%    passed     73.60%
+  10  cca169414   36.03%    passed     61.09%
+  11  cca27149    25.16%    passed     62.31%
+  12  regB3604    29.40%    passed     90.66%
+  13  regB3605    30.21%    passed     92.86%
+  14  regB3610    32.19%    passed     77.49%
+  15  regB3611    34.57%    passed     87.86%
+  16  cauB3614    26.62%    passed     94.62%
+  17  ccaB3620    27.67%    passed     58.25%
+  18  ccaB8215    20.19%    passed     99.24%
+  19  ccaB8406    44.47%    passed     98.91%
+  20  cau171672   46.37%    failed      2.94%
+  21  cau171697   39.26%    passed     66.66%
+  22  ccu171922   24.15%    passed     55.29%
+  23  ccu171938   51.13%    passed     72.26%
+  24  ccu172050   22.78%    passed     91.42%
+  25  cau172647   21.08%    passed     96.10%
+  26  cau172648   34.53%    passed     87.87%
+  27  cau27152    34.13%    passed     87.28%
+  28  cau31150    21.08%    passed     87.07%
+  29  cau31703    19.75%    passed     88.20%
+  30  cau34846    32.31%    passed     88.71%
+  31  cau34955    20.92%    passed     95.30%
+  32  cau34969    22.01%    passed     89.55%
+  33  ccu35130    23.51%    passed     81.52%
+  34  cau43139    23.34%    passed     94.78%
+  35  ccuB32203   27.83%    passed     93.85%
+  36  ccuB32266   34.81%    passed     97.13%
+  37  ccuB32524   30.17%    passed     63.59%
+  38  ccuB32578   27.87%    passed     99.61%
+  39  ccuB32662   30.17%    passed     80.33%
+  40  cauB3956    33.08%    passed     78.94%
+  41  ccuB6274    23.18%    passed     90.03%
+  42  ccuB6275    25.77%    passed     78.87%
+  43  ccuB6280    25.28%    passed     94.73%
+  44  en32573     30.37%    passed     94.21%
+  45  paB106743   43.98%    failed      0.29%
+  46  paB22569    33.24%    passed     68.35%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL       29.79%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+NOTE: Restoring information from model checkpoint file angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy.model.gz
+
+CHECKPOINT: Initial tree restored
+Perform fast likelihood tree search using GTR model...
+CHECKPOINT: Tree restored, LogL: -3309.262
+NOTE: ModelFinder requires 9414 MB RAM!
+ModelFinder will test up to 22 DNA models (sample size: 2476) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         3309.262     97  6812.523     6820.518     7376.520
+  2  SYM           3432.649     94  7053.297     7060.798     7599.851
+  3  TVM+F         3309.262     96  6810.523     6818.352     7368.706
+  4  TVMe          3432.649     93  7051.297     7058.637     7592.036
+  5  TIM3+F        3309.262     95  6808.523     6816.187     7360.891
+  6  TIM3e         3432.649     92  7049.297     7056.478     7584.222
+  7  TIM2+F        3309.262     95  6808.523     6816.187     7360.891
+  8  TIM2e         3432.649     92  7049.297     7056.478     7584.222
+  9  TIM+F         3309.262     95  6808.523     6816.187     7360.891
+ 10  TIMe          3432.649     92  7049.298     7056.479     7584.222
+ 11  TPM3u+F       3309.262     94  6806.523     6814.024     7353.077
+ 12  TPM3+F        3309.262     94  6806.523     6814.024     7353.077
+ 13  TPM2u+F       3309.262     94  6806.523     6814.024     7353.077
+ 14  TPM2+F        3309.262     94  6806.523     6814.024     7353.077
+ 15  K3Pu+F        3309.262     94  6806.523     6814.024     7353.077
+ 16  K3P           3432.649     91  7047.298     7054.321     7576.408
+ 17  TN+F          3309.262     94  6806.523     6814.024     7353.077
+ 18  TNe           3432.649     91  7047.298     7054.321     7576.408
+ 19  HKY+F         3309.262     93  6804.523     6811.863     7345.263
+ 20  K2P           3432.649     90  7045.298     7052.166     7568.594
+ 21  F81+F         3309.262     92  6802.523     6809.704     7337.448
+ 22  JC            3432.649     89  7043.298     7050.012     7560.779
+Akaike Information Criterion:           F81+F
+Corrected Akaike Information Criterion: F81+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to angsd_minQ13_minD1_maxD50_p05-n46-enOut-miss70-2476.min4.phy.model.gz
+CPU time for ModelFinder: 0.149 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.099 seconds (0h:0m:0s)
+Generating 1000000 samples for ultrafast bootstrap (seed: 836376)...
+CHECKPOINT: 1000000 UFBoot trees and 15 UFBootSplits restored
+
+NOTE: 9403 MB RAM (9 GB) is required!
+CHECKPOINT: Model parameters restored, LogL: -3309.119
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+CHECKPOINT: Candidate tree set restored, best LogL: -3309.119
+Finish initializing candidate tree set (20)
+Current best tree score: -3309.119 / CPU time: 0.000
+Number of iterations: 755
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 760 / LogL: -3309.119 / Time: 0h:3m:38s (0h:0m:11s left)
+Iteration 770 / LogL: -3309.119 / Time: 0h:9m:6s (0h:0m:21s left)
+NOTE: 3.120 seconds to dump checkpoint file, increase to 63.000
+Iteration 780 / LogL: -3309.119 / Time: 0h:14m:46s (0h:0m:22s left)
+Iteration 790 / LogL: -3309.119 / Time: 0h:20m:28s (0h:0m:15s left)
+Iteration 800 / LogL: -3309.119 / Time: 0h:26m:19s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -3309.266
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.095
+NOTE: UFBoot does not converge, continue at least 100 more iterations

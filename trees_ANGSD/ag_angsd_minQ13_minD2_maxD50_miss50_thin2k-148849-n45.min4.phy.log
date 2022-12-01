@@ -1,0 +1,11 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    kowakian (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s ag_angsd_minQ13_minD2_maxD50_miss50_thin2k-148849-n45.min4.phy -st DNA -m TEST -bb 10000 -nt 20 -o en32573
+Seed:    737180 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May  9 16:40:14 2022
+Kernel:  AVX+FMA - 20 threads (24 CPU cores detected)
+
+Reading alignment file ag_angsd_minQ13_minD2_maxD50_miss50_thin2k-148849-n45.min4.phy ... ERROR: File not found ag_angsd_minQ13_minD2_maxD50_miss50_thin2k-148849-n45.min4.phy

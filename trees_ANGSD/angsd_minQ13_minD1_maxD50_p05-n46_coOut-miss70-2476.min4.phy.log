@@ -1,0 +1,145 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    kowakian (AVX2, FMA3, 62 GB RAM)
+Command: iqtree -s angsd_minQ13_minD1_maxD50_p05-n46_coOut-miss70-2476.min4.phy -st DNA -m TEST -bb 1000000 -nt 5 -o co42292
+Seed:    305360 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May 18 08:06:53 2022
+Kernel:  AVX+FMA - 5 threads (24 CPU cores detected)
+
+Reading alignment file angsd_minQ13_minD1_maxD50_p05-n46_coOut-miss70-2476.min4.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 46 sequences with 2476 columns, 2456 distinct patterns
+0 parsimony-informative, 0 singleton sites, 2476 constant sites
+           Gap/Ambiguity  Composition  p-value
+   1  al43043     33.56%    passed     95.93%
+   2  cca159783   26.21%    passed     88.04%
+   3  cca159798   22.05%    passed     91.42%
+   4  cca168255   33.97%    passed     89.60%
+   5  cca169263   21.37%    passed     93.83%
+   6  cca169268   28.11%    passed     83.04%
+   7  cca169321   25.89%    passed     85.59%
+   8  cca169373   28.35%    passed     46.67%
+   9  cca169390   42.16%    passed     73.62%
+  10  cca169414   36.03%    passed     61.14%
+  11  cca27149    25.16%    passed     62.45%
+  12  regB3604    29.40%    passed     90.69%
+  13  regB3605    30.21%    passed     92.89%
+  14  regB3610    32.19%    passed     77.78%
+  15  regB3611    34.57%    passed     88.03%
+  16  cauB3614    26.62%    passed     94.73%
+  17  ccaB3620    27.67%    passed     58.63%
+  18  ccaB8215    20.19%    passed     99.25%
+  19  ccaB8406    44.47%    passed     98.90%
+  20  co42292     21.00%    passed     98.88%
+  21  cau171672   46.37%    failed      2.89%
+  22  cau171697   39.26%    passed     66.27%
+  23  ccu171922   24.15%    passed     55.75%
+  24  ccu171938   51.13%    passed     72.55%
+  25  ccu172050   22.78%    passed     91.15%
+  26  cau172647   21.08%    passed     95.89%
+  27  cau172648   34.53%    passed     88.09%
+  28  cau27152    34.13%    passed     87.64%
+  29  cau31150    21.08%    passed     87.24%
+  30  cau31703    19.75%    passed     87.96%
+  31  cau34846    32.31%    passed     89.07%
+  32  cau34955    20.92%    passed     95.15%
+  33  cau34969    22.01%    passed     89.61%
+  34  ccu35130    23.51%    passed     81.38%
+  35  cau43139    23.34%    passed     94.94%
+  36  ccuB32203   27.83%    passed     93.69%
+  37  ccuB32266   34.81%    passed     97.03%
+  38  ccuB32524   30.17%    passed     63.96%
+  39  ccuB32578   27.87%    passed     99.66%
+  40  ccuB32662   30.17%    passed     80.60%
+  41  cauB3956    33.08%    passed     78.66%
+  42  ccuB6274    23.18%    passed     90.18%
+  43  ccuB6275    25.77%    passed     79.12%
+  44  ccuB6280    25.28%    passed     94.85%
+  45  paB106743   43.98%    failed      0.28%
+  46  paB22569    33.24%    passed     67.98%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL       29.58%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Perform fast likelihood tree search using GTR model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3309.262
+Optimal log-likelihood: -3309.262
+Rate parameters:  A-C: 0.99996  A-G: 1.00024  A-T: 0.99980  C-G: 0.99988  C-T: 1.00024  G-T: 1.00000
+Base frequencies:  A: 0.317  C: 0.179  G: 0.165  T: 0.339
+Parameters optimization took 1 rounds (0.010 sec)
+Time for fast ML tree search: 0.057 seconds
+
+NOTE: ModelFinder requires 9398 MB RAM!
+ModelFinder will test up to 22 DNA models (sample size: 2476) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         3309.262     97  6812.524     6820.519     7376.520
+  2  SYM           3432.649     94  7053.298     7060.799     7599.851
+  3  TVM+F         3309.262     96  6810.524     6818.352     7368.706
+  4  TVMe          3432.649     93  7051.298     7058.638     7592.037
+  5  TIM3+F        3309.262     95  6808.524     6816.188     7360.892
+  6  TIM3e         3432.649     92  7049.298     7056.479     7584.223
+  7  TIM2+F        3309.262     95  6808.524     6816.188     7360.892
+  8  TIM2e         3432.649     92  7049.298     7056.479     7584.223
+  9  TIM+F         3309.262     95  6808.524     6816.188     7360.892
+ 10  TIMe          3432.649     92  7049.298     7056.479     7584.223
+ 11  TPM3u+F       3309.262     94  6806.524     6814.025     7353.077
+ 12  TPM3+F        3309.262     94  6806.524     6814.025     7353.077
+ 13  TPM2u+F       3309.262     94  6806.524     6814.025     7353.077
+ 14  TPM2+F        3309.262     94  6806.524     6814.025     7353.077
+ 15  K3Pu+F        3309.262     94  6806.524     6814.025     7353.077
+ 16  K3P           3432.649     91  7047.298     7054.322     7576.409
+ 17  TN+F          3309.262     94  6806.524     6814.025     7353.077
+ 18  TNe           3432.649     91  7047.298     7054.322     7576.409
+ 19  HKY+F         3309.262     93  6804.524     6811.864     7345.263
+ 20  K2P           3432.649     90  7045.298     7052.166     7568.594
+ 21  F81+F         3309.262     92  6802.524     6809.705     7337.448
+ 22  JC            3432.649     89  7043.298     7050.012     7560.780
+Akaike Information Criterion:           F81+F
+Corrected Akaike Information Criterion: F81+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to angsd_minQ13_minD1_maxD50_p05-n46_coOut-miss70-2476.min4.phy.model.gz
+CPU time for ModelFinder: 1.573 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 0.341 seconds (0h:0m:0s)
+Generating 1000000 samples for ultrafast bootstrap (seed: 305360)...
+
+NOTE: 9387 MB RAM (9 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3309.262
+Optimal log-likelihood: -3309.262
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.317  C: 0.179  G: 0.165  T: 0.339
+Parameters optimization took 1 rounds (0.010 sec)
+Computing ML distances based on estimated model parameters... 0.089 sec
+Computing BIONJ tree...
+0.002 seconds
+Log-likelihood of BIONJ tree: -3309.119
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.488 second
+Computing log-likelihood of 98 initial trees ... 0.423 seconds
+Current best score: -3309.119
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3309.119
+Iteration 10 / LogL: -3309.262 / Time: 0h:7m:2s
+Iteration 20 / LogL: -3309.262 / Time: 0h:13m:45s
+Finish initializing candidate tree set (20)
+Current best tree score: -3309.119 / CPU time: 778.724
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3309.119 / Time: 0h:20m:1s (0h:49m:2s left)
+Iteration 40 / LogL: -3309.119 / Time: 0h:25m:33s (0h:39m:58s left)
+Iteration 50 / LogL: -3309.119 / Time: 0h:31m:9s (0h:32m:25s left)
+Log-likelihood cutoff on original alignment: -3309.266
